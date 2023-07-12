@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@media (max-width: 700px) {
+            .right-column {
+                display: none;
+            }
+        }
+
+#app{
+	width : 100%;
+	height : 100%;
+}
+
+.page-content-wrapper{	
+	background-color: #edf0f5;
+	width : 100%;
+	min-height: 300vh;
+	display : flex;
+	justify-content: center;
+	
+}
+
+.left-column{
+	width : 680px;
+	height : 100%;
+	margin : 7.5px;
+	margin-top : 75px;
+}
+
+.right-column{
+	width : 360px;
+	height : 1000px;
+	margin : 7.5px;
+	margin-top : 75px;
+	
+	
+}
+.common{
+	width : 100%;
+	background-color : white;
+	border-radius: 8px;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+}
+.banner{
+	height : 257px;
+}
+.search-bar{
+	height : 76px;
+	padding : 15px;
+	display : flex;
+	
+}
+
+.search-box{
+	border: 0.5px solid black;
+	border-radius: 8px;
+	width : 370px;
+	height : 44px;
+	margin : 0 15px 0 0 ;
+	display : flex;
+	justify-content : center;
+	padding : 10px;
+}
+.search-filter{
+	border: 0.5px solid black;
+	border-radius: 8px;
+	width : 150px;
+	height : 44px;
+	margin : 0 15px 0 0 ;
+	padding : 14px;
+	justify-content: space-between;
+	background-color : white;
+}
+.search-button{
+	border: 0.5px solid green;
+	border-radius: 8px;
+	width : 96px;
+	height : 44px;
+	margin : 0 15px 0 0 ;
+	background-color : green;
+	color : white;
+	font-size : 15px;
+	
+}
+
+#search-icon img{
+	width : 20px;
+	height : 20px;
+	left : 0px;
+}
+
+
+.search-box input{
+	margin : 0 0 0 5px;
+	width : 300px;
+	border: 0.5px solid white; 
+	color : gray;
+	font-size : 15px;
+	margin : 0 0 0 5px;
+}
+
+.restaurant-container{
+	width : 100%;
+	height : 100%;
+}
+.restaurant-item {
+	height : 210px;
+	margin-top : 20px;
+	display :flex;
+}
+.login-box-out {
+	height : 400px;
+	padding : 24px;
+	text-align : center;
+	margin-bottom : 20px;
+}
+.login-porm{
+	margin : 30px 0 0 0;
+}
+.login-porm input{
+	width : 312px;
+	height : 40px;
+	font-size : 15px;
+	border-radius: 8px;
+	border: 0.5px solid black; 
+	margin : 0 0 30px 0;
+}
+.login-porm p{
+	text-align : left;
+	color : gray;
+}
+.restaurant-ranking-out{
+	height : 350px;
+	width : 100%;
+	background-color : white;
+	border-radius: 8px;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+	padding : 20px 20px;
+}
+.restaurant-ranking-out .ranking{
+	text-align : center;
+	margin-bottom : 30px;
+	
+}
+.restaurant-ranking-out .ranking_num{
+	margin : 10px 10px;
+	
+}
+
+.recent-visit-history{
+	height : 450px;
+	margin-top : 20px;
+}
+
+.res-name-favorite{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.res-info{
+	width : 100%;
+	padding : 5px;
+}
+.res-name{
+	width : 162px;
+	height : 40px;
+	font-size: 30px;
+}
+.favorite_item{
+	display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 112px;
+    height: 44px;
+    background-color: rgba(53,62,58,0.05);
+    justify-content: center;
+    border-radius: 8px;
+    flex-direction: row;
+}
+.res-title-location{
+	width : 100px;
+	height : 50px;
+	display : inlene-block;
+}
+.good_disease{
+	display : flex;
+}
+.good_disease div{
+	margin-right : 10px;
+}
+
+.res-location{
+	font-size : 15px;
+}
+.res-img-container{
+	width : 280px;
+	height : 180px;
+	display : flex;
+	justify-content: space-between;
+	padding : 15px;
+}
+.menu-img {
+	width : 240px;
+	height : 180px;
+	object-fit: cover;
+}
+
+.res-info div div{
+	margin-top : 5px;
+}
+
+.search-filter{
+	display : flex;
+	
+}
+.search-filter-2{
+	display : flex;
+	font-size : 15px;
+}
+
+.select_menu{
+	width : 200px;
+	height : 100px;
+	border-radius: 8px;	
+}
+.select_menu select{
+	width : 150px;
+	height : 100px;
+}
+.select_menu select{
+	width: 150px;
+	height : 44px;
+  	padding: .8em .8em; 
+  	background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;   
+  	border: 1px solid #999; 
+  	-webkit-appearance: none; 
+ 	-moz-appearance: none;
+  	appearance: none;
+  	border-radius: 8px;
+  	font-size : 15px;	
+  	color : gray;
+}
+.ranking_num{
+	border:solid gray; 
+	border-width :0 0 2px 0 ;
+}
+.favorite_item {
+    color: white;
+}
+    
+.rating-star{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	width: 112px;
+	height: 44px;
+	background-color: rgba(53, 62, 58, 0.05);
+	justify-content: center;
+	border-radius: 8px;
+	flex-direction: row;
+	margin: auto;
+}
+
+
