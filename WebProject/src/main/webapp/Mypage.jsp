@@ -77,7 +77,7 @@
     					onmouseout="this.style.backgroundColor='<%=color %>'">
 						<td><a href="restaurant_page.jsp?id=<%=brdd.getId()%>"><%= cnt %></a></td>
 						<td><%= brdd.getRestaurant_name() %></td>
-						<td><a href="removeFavorites_process.jsp?userID=<%= userID %>&restaurantID=<%= brdd.getId() %>">삭제</a></td>
+						<td><a href="removeFavorites_process.jsp?userID=<%= userID %>&restaurantID=<%= brdd.getId() %>" style = "color : black;">삭제</a></td>
 					</tr>
 					
 			

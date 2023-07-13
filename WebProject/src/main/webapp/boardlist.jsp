@@ -78,7 +78,7 @@
 					<tr bgcolor=<%=color %> 
 						onmouseover="this.style.backgroundColor='SkyBlue'"
     					onmouseout="this.style.backgroundColor='<%=color %>'">
-						<td><a href="restaurant_page.jsp?id=<%=brd.getId()%>"><%= idCounter++ %></a></td>
+						<td><a href="restaurant_page.jsp?id=<%=brd.getId()%>" style = "color : black;"><%= idCounter++ %></a></td>
 						<td><%= brd.getRestaurant_name() %></td>
 						<td><%= brd.getAddress() %></td>
 						<td><%= brd.getUserid() %></td>
