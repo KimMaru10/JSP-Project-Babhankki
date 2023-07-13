@@ -237,16 +237,16 @@ public class BbsDAO {
 		        
 		        
 		        // address에서 searchKeyword를 포함하는 레코드 검색 쿼리
-		        String addressQuery = "SELECT * FROM Restaurants WHERE address LIKE ?";
+		        String addressQuery = "SELECT * FROM Restaurants WHERE address LIKE ? AND deleted = 0";
 		        
 		        // good_health_condition에서 region을 포함하는 레코드 검색 쿼리
-		        String healthConditionQuery = "SELECT * FROM Restaurants WHERE good_health_condition LIKE ?";
-		        
+		        String healthConditionQuery = "SELECT * FROM Restaurants WHERE good_health_condition LIKE ? AND deleted = 0";
+
 		        // address와 good_health_condition 두 가지 조건을 모두 만족하는 레코드 검색 쿼리
-		        String dualConditionQuery = "SELECT * FROM Restaurants WHERE address LIKE ? AND good_health_condition LIKE ?";
-		        
+		        String dualConditionQuery = "SELECT * FROM Restaurants WHERE address LIKE ? AND good_health_condition LIKE ? AND deleted = 0";
+
 		        // 전체 검사 쿼리 
-		        String allQuery = "SELECT * FROM Restaurants";
+		        String allQuery = "SELECT * FROM Restaurants WHERE deleted = 0";
 		        
 		        if (searchKeyword != null && !searchKeyword.isEmpty()) {
 		            if (disease != null && !disease.isEmpty()) {

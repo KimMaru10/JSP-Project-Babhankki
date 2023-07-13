@@ -18,7 +18,7 @@
 	request.setCharacterEncoding("UTF-8");
 	int fileSize = 1024 * 1024 * 10;
 	String realPath = "/Users/gimdaeseong/eclipse_webserver_workspace/WebProject/src/main/webapp/upload/image";
-	MultipartRequest multi = multi = new MultipartRequest(request, realPath, fileSize, "UTF-8",new DefaultFileRenamePolicy());
+	MultipartRequest multi = new MultipartRequest(request, realPath, fileSize, "UTF-8",new DefaultFileRenamePolicy());
 	String originalFile = multi.getOriginalFileName("uploadfiles");
 	String uploadFile = multi.getFilesystemName("uploadfiles");
 	String menu = multi.getParameter("menu");

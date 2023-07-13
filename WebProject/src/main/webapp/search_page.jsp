@@ -74,12 +74,7 @@
 							</div>
 						</div>	
 						<div class = "res-info">
-							<div class = "res-name-favorite">
-								<div class = "res-name"><%= brd.getRestaurant_name() %></div>
-								<div class = "favorite_item">
-									<i class="fa-regular fa-star"></i>즐겨찾기
-								</div>
-							</div>
+							
 							<div class = "res-possibledisease-location">
 								<div class = "possible_disease">
 									<div class = "good_disease">
@@ -105,9 +100,7 @@
 					%>
 				</div>
 			</div>
-       
-				 
-      	
+      	</div>
     </div>
 </body>
 </html>
