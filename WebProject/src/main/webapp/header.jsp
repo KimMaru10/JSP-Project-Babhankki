@@ -107,6 +107,17 @@ a{
 	display : block;
 }
 
+.login{
+	display : none;
+}
+
+@media (max-width: 800px) {
+    .login {
+        display: block;
+   }
+}
+
+
 
 </style>
 </head>
@@ -133,10 +144,10 @@ a{
 						<span>Home</span>
 					</a>
 				</div>
-				<div class="nav-menu-item">
-					<a href = " ">
-						<div class = "menu-icon"><img src="media/info.svg" alt></div>
-						<span>정보</span>
+				<div class = "nav-menu-item login" >
+					<a href = "login_page.jsp">
+						<div class = "menu-icon"><img src="media/account.svg" alt></div>
+						<span>로그인</span>					
 					</a>
 				</div>
 			</div>

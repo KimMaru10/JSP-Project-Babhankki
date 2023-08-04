@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
             .right-column {
                 display: none;
             }

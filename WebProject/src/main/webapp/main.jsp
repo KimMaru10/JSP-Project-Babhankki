@@ -124,7 +124,7 @@
 					</form>
 				</div>
 				<div class = "restaurant-ranking-out common" id = "ranking">
-					<div class = "ranking" style = "font-size : 40px;"><h3>인기 랭킹</h3></div>
+					<div class = "ranking" style = "font-size : 40px;"><h3>🔥인기 랭킹</h3></div>
 					<%
 				        List<String> top3RestaurantNames = brddb.getRankingName();
 				        List<Integer> top3RestaurantIDs = brddb.getRankingID();
@@ -147,7 +147,7 @@
 				}else{
 			%>
 					<div class = "restaurant-ranking-out common" id = "ranking">
-					<div class = "ranking" style = "font-size : 40px;"><h3>인기 랭킹</h3></div>
+					<div class = "ranking" style = "font-size : 40px;"><h3>🔥인기 랭킹</h3></div>
 					<%
 				        List<String> top3RestaurantNames = brddb.getRankingName();
 				        List<Integer> top3RestaurantIDs = brddb.getRankingID();
