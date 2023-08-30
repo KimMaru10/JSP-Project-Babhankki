@@ -144,6 +144,12 @@ a{
 						<span>Home</span>
 					</a>
 				</div>
+				<div class="nav-menu-item">
+					<a href = "about.jsp?id=1">
+						<div class = "menu-icon"><img src="media/info.svg" alt></div>
+						<span>정보</span>
+					</a>
+				</div>
 				<div class = "nav-menu-item login" >
 					<a href = "login_page.jsp">
 						<div class = "menu-icon"><img src="media/account.svg" alt></div>
@@ -178,7 +184,7 @@ a{
 					</a>
 				</div>
 				<div class="nav-menu-item">
-					<a href = " ">
+					<a href = "about.jsp?id=1">
 						<div class = "menu-icon"><img src="media/info.svg" alt></div>
 						<span>정보</span>
 					</a>

@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/Mypage.css" type="text/css" />
+<link rel="stylesheet" href="css/mypage.css" type="text/css" />
 <title>Insert title here</title>
 <style>
 	.myPageImg{
@@ -157,5 +157,6 @@
    }
 %>
 </div>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

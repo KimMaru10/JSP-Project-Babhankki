@@ -139,36 +139,40 @@
 				    <%
 				        }
 				    %>
-					
-					
-					
+				</div>
+				<div class = "info-box common"  OnClick="location.href ='about.jsp?id=1'">
+					<img src="media/info-img.png"/>
 				</div>
 			<%
 				}else{
 			%>
-					<div class = "restaurant-ranking-out common" id = "ranking">
-					<div class = "ranking" style = "font-size : 40px;"><h3>🔥인기 랭킹</h3></div>
-					<%
-				        List<String> top3RestaurantNames = brddb.getRankingName();
-				        List<Integer> top3RestaurantIDs = brddb.getRankingID();
+				<div class = "restaurant-ranking-out common" id = "ranking">
+				<div class = "ranking" style = "font-size : 40px;"><h3>🔥인기 랭킹</h3></div>
+				<%
+			        List<String> top3RestaurantNames = brddb.getRankingName();
+			        List<Integer> top3RestaurantIDs = brddb.getRankingID();
 				
-				        for (int i = 0; i < top3RestaurantNames.size(); i++) {
-				            String restaurantName = top3RestaurantNames.get(i);
-				            int restaurantID = top3RestaurantIDs.get(i);
-				    %>
-				            <div class = "ranking_num"style = "font-size : 40px;">
-				                <a style = "text-decoration : none; color : orange"href="restaurant_page.jsp?id=<%= restaurantID %>"><%= restaurantName %></a>
-				            </div>
+			        for (int i = 0; i < top3RestaurantNames.size(); i++) {
+			            String restaurantName = top3RestaurantNames.get(i);
+			            int restaurantID = top3RestaurantIDs.get(i);
+			    %>
+			            <div class = "ranking_num"style = "font-size : 40px;">
+			                <a style = "text-decoration : none; color : orange"href="restaurant_page.jsp?id=<%= restaurantID %>"><%= restaurantName %></a>
+			            </div>
 				    <%
-				        }
-				    
-
+			        }
+			        %>
+			</div>
+			<div class = "info-box common"  OnClick="location.href ='about.jsp?id=1'">
+				<img src="media/info-img.png"/>
+			</div>
+			<%
 				}
 			%>
-			
-			</div>
 		</div>
+		
 	</div>
+	<jsp:include page="footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

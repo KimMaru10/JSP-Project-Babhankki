@@ -47,7 +47,15 @@
 		};
 	%>
 	<jsp:include page="header.jsp"></jsp:include>
-	
+	<div class = "vanner">
+		<img src = "media/vanner.jpg">
+	</div>
+	<div class = "title-box">
+		<div class = "title">
+			<h1>게시판</h1>
+			<div></div>
+		</div>
+	</div>
 	<div class = "container"> 
 		<div class="row">
 			<form name = "boardform" method = "post" action = "write_process.jsp" 

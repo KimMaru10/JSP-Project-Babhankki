@@ -24,17 +24,35 @@
 	.container{
 		width : 100%;
 		height : 900px;
-		margin : 80px 0 0 0;
+		margin : 20px 0 0 0;
 		display: flex;
 		justify-content: center;
 	}
 	.write-button-box{
 		display: flex;
 		justify-content : flex-end;
-		margin-top : 50px;
+		margin-top : 20px;
 	}
 	tbody tr{
 		height : 40px;
+	}
+	.vanner img{
+		width : 100%; 
+		height : 250px;
+		object-fit: cover;
+	} 
+	.title-box{
+		display: flex;
+		justify-content: center;
+		margin-top : 50px;
+	}
+	.title{
+		width : 600px;
+	}
+	.title div{
+		background-color : gray;
+		width : 100px;
+		height : 0.5px;
 	}
 </style>
 </head>
@@ -51,8 +69,15 @@
 	   	if (counter > 0) {
 	%>
 		
-
-	
+	<div class = "vanner">
+		<img src = "media/vanner.jpg">
+	</div>
+	<div class = "title-box">
+		<div class = "title">
+			<h1>게시판</h1>
+			<div></div>
+		</div>
+	</div>
 	<div class = "container"> 
 		<div class="row">
 			<table style="text-align: center; border:1px solid #dddddd; width : 600px;">
